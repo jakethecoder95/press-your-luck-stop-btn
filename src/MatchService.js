@@ -1,10 +1,10 @@
 import axios from "axios";
 
-// const url = "https://game-show.herokuapp.com/match/";
-const url = "http://localhost:8000/match/";
+const url = "https://game-show.herokuapp.com/match/";
+// const url = "http://localhost:8000/match/";
 
-// const pressYourLuckURL = "https://game-show.herokuapp.com/press-your-luck/";
-const pressYourLuckURL = "http://localhost:8000/press-your-luck/";
+const pressYourLuckURL = "https://game-show.herokuapp.com/press-your-luck/";
+// const pressYourLuckURL = "http://localhost:8000/press-your-luck/";
 
 class MatchService {
   static getMatch() {
