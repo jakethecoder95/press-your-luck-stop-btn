@@ -41,8 +41,8 @@ export default {
     try {
       this.match = await MatchService.getMatch();
       this.active = this.match.pressYourLuck.activeTeam;
-      // const socket = openSocket("https://game-show.herokuapp.com");
-      const socket = openSocket("http://localhost:8000");
+      const socket = openSocket("https://game-show.herokuapp.com");
+      // const socket = openSocket("http://localhost:8000");
       socket.on("pressYourLuck", data => {
         const { action } = data;
         if (action === "start") {
